@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: #aaa;
+}
+
+.stick, .plane {
+  padding: 20px 0;
+  background: #aaa;
+  text-align: center;
+}
+
+.stick {
+  padding-top: 0;
+}
+
+.stick__name, .plane__name {
+  font-size: 20px;
+  padding: 40px;
+}
+
+.stick__input, .plane__input {
+  width: 80%;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input, .output {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.input__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.wrap__name {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+.input__numb {
+  width: 5em;
+  text-align: right;
+  margin-left: 20px;
+}
+
+#canvas {
+  display: inline-block;
+}
+
+.airplane {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin-left: 40px;
+  background: #fff;
+  position: relative;
+}
+
+.stab {
+  position: absolute;
+  top: 195px;
+  left: 0;
+  width: 100px;
+  height: 10px;
+  border: 1px solid black;
+}
+.elev {
+  position: absolute;
+  transform-origin: left;
+  transform: rotate(0deg);
+  top: 195px;
+  left: 110px;
+  height: 10px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+}

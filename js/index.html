@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Test Exponent</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="stick">
+      <div class="stick__name">Стик</div>
+      <input class="stick__input" type="range" min="0" max="4096" step="1" value="2048">
+    </div>
+    <div class="plane">
+      <div class="plane__name">Самолет</div>
+      <input class="plane__input" type="range" min="1108" max="1933" step="1" value="1520">
+    </div>
+
+    <div class="options">
+      <div class="input">
+        <div class="wrap__name">
+          Входные
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Минимум</span>
+          <input class="input__numb" type="number" name="inMin" value="0">
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Центр</span>
+          <input class="input__numb" type="number" name="inCent" value="2048">
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Максимум</span>
+          <input class="input__numb" type="number" name="inMax" value="4096">
+        </div>
+      </div>
+
+      <div class="output">
+        <div class="wrap__name">
+          Выходные
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Минимум</span>
+          <input class="input__numb" type="number" name="outMin" value="1108">
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Центр</span>
+          <input class="input__numb" type="number" name="outCent" value="1520.5">
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Максимум</span>
+          <input class="input__numb" type="number" name="outMax" value="1933">
+        </div>
+      </div>
+      <div class="output">
+        <div class="wrap__name">
+          Настройки
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Расходы</span>
+          <input class="input__numb" type="number" name="rate" value="100">
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Экспонента</span>
+          <input class="input__numb" type="number" name="exp" value="40">
+        </div>
+        <div class="input__wrap">
+          <span class="input__name">Инвертировать</span>
+          <input class="input__check" type="checkbox" name="inv">
+        </div>
+      </div>
+    </div>
+    <button type="button" name="button" id="button">Расчитать</button>
+    <br>
+    <canvas height='400' width='400' id='canvas'>Обновите браузер</canvas>
+    <div class="airplane">
+      <div class="stab"></div>
+      <div class="elev"></div>
+    </div>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
